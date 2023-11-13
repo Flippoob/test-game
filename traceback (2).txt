@@ -1,0 +1,26 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 23, in script
+    $ player_name = player_name.strip()
+  File "game/script.rpy", line 23, in <module>
+    $ player_name = player_name.strip()
+AttributeError: 'function' object has no attribute 'strip'
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 23, in script
+    $ player_name = player_name.strip()
+  File "C:\Users\Tristan\Downloads\renpy-8.1.3-sdk\renpy\ast.py", line 1138, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "C:\Users\Tristan\Downloads\renpy-8.1.3-sdk\renpy\python.py", line 1122, in py_exec_bytecode
+    exec(bytecode, globals, locals)
+  File "game/script.rpy", line 23, in <module>
+    $ player_name = player_name.strip()
+AttributeError: 'function' object has no attribute 'strip'
+
+Windows-10-10.0.19045 AMD64
+Ren'Py 8.1.3.23091805
+Game 1.0
+Sat Nov 11 21:31:41 2023
