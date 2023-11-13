@@ -40,7 +40,7 @@ label start:
              jump village
 
 label village:
-    ivar "You want to go to the village?"
+    ivar "So, you want to go to the village?"
     scene village hub with pixellate
     
     
