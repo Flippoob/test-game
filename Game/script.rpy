@@ -8,6 +8,7 @@ image line = "character backround.png"
 image ivar = "Ivar.png"
 image forest = "Forest.png"
 image village hub = "Village (Hub).png"
+image village1 = "Village (Hub) - (1).png"
 define gui.text_font = "Aclonica-Regular.ttf"  
 define gui.name_text_font = "Aclonica-Regular.ttf"
 define gui.interface_text_font = "EagleLake-Regular.ttf" 
@@ -45,5 +46,17 @@ label village:
     play music "<loop 0>Arbondor.mp3"
     ivar "This is our village, Arbondor."
     ivar "You are welcome to stay here as long as you'd like."
-    
+    ivar "Arbondor keeps going on north, would you like to see the rest?"
+    menu:
+        "Would you like to explore the rest of the Arbondor?"
+        "Yes":
+            jump village1
+        "No":
+            ivar "I guess you can stay here then."
+    return
+
+label village1:
+    ivar "Let's go to the north of Arbondor then."
+    scene village1 with pixellate
+
     return
