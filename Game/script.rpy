@@ -42,6 +42,7 @@ label start:
 label village:
     ivar "So, you want to go to the village?"
     scene village hub with pixellate
+    play music "<loop 0>Arbondor.mp3"
     ivar "This is our village, Arbondor."
     ivar "You are welcome to stay here as long as you'd like."
     
