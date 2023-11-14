@@ -55,6 +55,9 @@ label village:
             jump village1
         "No":
             ivar "I guess you can stay here then."
+    ivar "By the way, there are armor and weapon shops here."
+    ivar "I'll give you some gold if you want to buy anything."
+        
     return
 
 label village1:
